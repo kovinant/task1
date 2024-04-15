@@ -1,0 +1,54 @@
+Проект курсовой
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Основные понятия</title>
+
+  <link rel="shortcut icon" type="image/png" href="../Jasmine/jasmine_favicon.png">
+  <link rel="stylesheet" href="../Jasmine/jasmine.css">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <script src="../Jasmine/jasmine.js"></script>
+  <script src="../Jasmine/jasmine-html.js"></script>
+  <script src="../Jasmine/boot.js"></script>
+
+
+<script type="text/javascript" src="./task.js"></script>
+
+
+  <script type="text/javascript" src="./tests.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo__container">
+      <a href="https://netology.ru/" class="logo__link"></a>
+    </div>
+    <h1 class="header__title">Домашнее задание к лекции 1. «Основные понятия»</h1>
+  </header>
+
+    
+    <section class="calculator">
+      <h2>Решение квадратных уравнений</h2>
+      <p>Введите коэффициенты для уравнения <em>ax² + bx + c = 0</em>:</p>
+      <input type="number" id="coef-a" placeholder="Введите a">
+      <input type="number" id="coef-b" placeholder="Введите b">
+      <input type="number" id="coef-c" placeholder="Введите c">
+      <button onclick="solveAndDisplay()">Решить уравнение</button>
+      <div id="result"></div>
+    </section>
+    <section class="mortgage-calculator">
+        <h2>Ипотечный калькулятор</h2>
+        <input type="number" id="mortgage-percent" placeholder="Процентная ставка">
+        <input type="number" id="mortgage-contribution" placeholder="Первоначальный взнос">
+        <input type="number" id="mortgage-amount" placeholder="Сумма кредита">
+        <input type="number" id="mortgage-term" placeholder="Срок кредита в месяцах">
+        <button id="calculate-mortgage">Рассчитать</button>
+        <div id="mortgage-result"></div>
+      </section>
+      
+
+  
+</body>
+</html>
